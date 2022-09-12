@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.sobre-nosotros{
+
+    h2{
+        margin-top: 5rem;
+        text-align: center;
+        color: v.$navy;
+    }
+}
+.contenido-nosotros{
+    padding: 5rem 0;
+    @include m.tablet {
+        @include m.grid(3, 5rem);
+    }
+
+    .titulo {
+        text-align: center;
+        color: v.$rosa;
+        font-weight: 700;
+    }
+
+    p{
+        text-align: center;
+    }
+   
+}
